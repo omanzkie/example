@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Animation & Transition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 210vh;
+        }
+
+        .image-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
+
+        .image-container::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<head>
+<style>
+    .button {
+      background-color: #4CAF50; /* Green background */
+      border: none; /* Remove border */
+      color: white; /* White text */
+      padding: 15px 32px; /* Padding */
+      text-align: center; /* Centered text */
+      text-decoration: none; /* Remove underline */
+      display: inline-block; /* Inline display */
+      font-size: 16px; /* Font size */
+      margin: 4px 2px; /* Some margin */
+      cursor: pointer; /* Pointer cursor on hover */
+      border-radius: 8px; /* Rounded corners */
+    }
+<head>
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .circle-logo {
+      width: 150px;
+      height: 150px;
+      background-color: #ffffff; /* Background color of the circle */
+      border: 5px solid #00FFFF; /* Border color and size */
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+    .circle-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image fits properly inside the circle */
+    }
+  </style>
+</head>
+<body>
+    <center>
+        <div class="circle-logo">
+    <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/2ND QUARTER/PROJECT/PROJECT pics/logo2.jpg" alt="Logo">
+  </div>
+  <br>
+  <h1>SPORTS</h1>
+        <h3><font color="blue">SEPAK</font></h3>
+        <div class="image-container">
+        <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/2ND QUARTER/PROJECT/PROJECT pics/image1.jpg" alt="Sample Image">
+    </div>
+    <br>
+    <h3><font color="red">VOLLEYBALL</font></h3>
+    <div class="image-container">
+        <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/2ND QUARTER/PROJECT/PROJECT pics/image2.jpg" alt="Sample Image">
+    </div>
+    <br>
+    <h3><font color="green">BASKETBALL</font></h3>
+    <div class="image-container">
+        <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/2ND QUARTER/PROJECT/PROJECT pics/image3.jpg" alt="Sample Image">
+    </div>
+    <br>
+  <h1>ACTIVITY</h1>
+  <h3><font color="gold">ENGLISH MONTH</font></h3>
+    <div class="image-container">
+        <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/2ND QUARTER/PROJECT/PROJECT pics/a1.jpg" alt="Sample Image">
+    </div>
+    <br>
+    <h3><font color="maroon">SCIENCE MONTH</font></h3>
+    <div class="image-container">
+        <img src="file:///storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/2ND QUARTER/PROJECT/PROJECT pics/a2.jpg" alt="Sample Image">
+    </div>
+    <br>
+    <button class="button"><a href="page3.html">BACK</a></button>
+    <button class="button"><a href="index.html">LOG OUT</a></button>
+    </center>
+</body>
+</html>
